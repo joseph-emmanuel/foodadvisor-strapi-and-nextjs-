@@ -50,7 +50,8 @@
       },
       "type": "dynamiczone",
       "components": [
-        "blocks.hero"
+        "blocks.hero",
+        "blocks.cta-command-line"
       ]
     },
     "publish_at": {

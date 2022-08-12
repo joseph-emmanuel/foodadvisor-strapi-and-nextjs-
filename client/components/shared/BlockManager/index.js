@@ -1,4 +1,5 @@
 import Hero from "../../blocks/Hero";
+import CtaCommandLine from "../../blocks/CtaCommandLine";
 
 const getBlockComponent = ({ __component, ...rest }, index) => {
   let Block;
@@ -6,6 +7,9 @@ const getBlockComponent = ({ __component, ...rest }, index) => {
   switch (__component) {
     case "blocks.hero":
       Block = Hero;
+      break;
+    case "blocks.cta-command-line":
+      Block = CtaCommandLine;
       break;
   }
 
