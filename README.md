@@ -1,6 +1,6 @@
 # FoodAdvisor - Client
 
-![FoodAdvisor](../foodadvisor.png)
+![foodadvisor-strapi-nextjs](../foodadvisor.png)
 
 Welcome to FoodAdvisor, the official Strapi demo application.
 
