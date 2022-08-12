@@ -51,7 +51,8 @@
       "type": "dynamiczone",
       "components": [
         "blocks.hero",
-        "blocks.cta-command-line"
+        "blocks.cta-command-line",
+        "blocks.pricing"
       ]
     },
     "publish_at": {
