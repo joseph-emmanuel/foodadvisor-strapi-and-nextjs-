@@ -51,7 +51,9 @@
       },
       "type": "dynamiczone",
       "components": [
-        "blocks.hero"
+        "blocks.hero",
+        "blocks.cta-command-line",
+        "blocks.pricing"
       ]
     },
     "publish_at": {
@@ -61,6 +63,22 @@
         }
       },
       "type": "datetime"
+    },
+    "testImage": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
