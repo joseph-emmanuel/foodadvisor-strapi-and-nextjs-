@@ -1,13 +1,13 @@
 import { CopyBlock, nord } from "react-code-blocks";
 
 const CtaCommandLine = ({ title, text, theme, commandLine }) => {
-  console.log(
-    "title, text, theme, commandLine : ",
-    title,
-    text,
-    theme,
-    commandLine
-  );
+  // console.log(
+  //   "title, text, theme, commandLine : ",
+  //   title,
+  //   text,
+  //   theme,
+  //   commandLine
+  // );
   return (
     <div className={`bg-${theme}`}>
       <div className="text-center w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">

@@ -8,6 +8,7 @@ export async function checkRequiredData(block) {
 // This function will get the data dependencies for every blocks.
 export async function getDataDependencies(json) {
   let blocks = delve(json, "blocks", []);
+  // console.log("blocks:", blocks);
   blocks = await Promise.all(blocks.map(checkRequiredData));
   return {
     ...json,

@@ -3,7 +3,7 @@ import Pricing from "../../blocks/Pricing";
 import CtaCommandLine from "../../blocks/CtaCommandLine";
 
 const getBlockComponent = ({ __component, ...rest }, index) => {
-  console.log("my component is : ", __component);
+  // console.log("my component is : ", __component);
   let Block;
 
   switch (__component) {
