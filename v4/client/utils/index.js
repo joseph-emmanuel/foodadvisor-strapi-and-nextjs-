@@ -13,9 +13,7 @@ export function getStrapiMedia(url) {
   if (url.startsWith("http") || url.startsWith("//")) {
     return url;
   }
-  return `${
-    process.env.NEXT_PUBLIC_API_URL || "http://localhost:1337/api"
-  }${url}`;
+  return `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:1337"}${url}`;
 }
 
 // handle the redirection to the homepage if the page we are browsinng doesn't exists

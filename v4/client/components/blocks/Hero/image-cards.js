@@ -9,16 +9,18 @@ const ImageCards = ({ images }) => {
   return (
     <div className="relative space-y-4">
       <div className="flex items-end justify-center lg:justify-start space-x-4">
-        {images.map((image, index) => {
-          console.log("image", image["attributes"]["url"]);
-          <img
-            className="rounded-lg shadow-lg w-32 md:w-56"
-            key={`heroImage-${index}`}
-            width="200"
-            src={getStrapiMedia(delve(image["attributes"]["url"], "url"))}
-            alt={delve(image, "alternativeText")}
-          />;
-        })}
+        {images &&
+          images
+            .slice(0, 2)
+            .map((image, index) => (
+              <img
+                className="rounded-lg shadow-lg w-32 md:w-56"
+                key={`heroImage-${index}`}
+                width="200"
+                src={getStrapiMedia(delve(image["attributes"], "url"))}
+                alt={delve(image, "alternativeText")}
+              />
+            ))}
       </div>
       <div className="flex items-start justify-center lg:justify-start space-x-4 md:ml-12">
         {images &&
@@ -29,7 +31,7 @@ const ImageCards = ({ images }) => {
                 className="rounded-lg shadow-lg w-32 md:w-56"
                 key={`heroImage-${index}`}
                 width="200"
-                src={getStrapiMedia(delve(image["attributes"]["url"], "url"))}
+                src={getStrapiMedia(delve(image["attributes"], "url"))}
                 alt={delve(image, "alternativeText")}
               />
             ))}

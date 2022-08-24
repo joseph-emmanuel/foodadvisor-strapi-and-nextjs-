@@ -19,11 +19,10 @@ export async function getServerSideProps(context) {
     const res = await fetch(delve(data, "data"));
 
     const json = await res.json();
-    // console.log("json length  is : ", json["data"].length);
-    // if (!json["data"].length) {
-    //   return redirectToHomepage();
-    // }
-    // console.log("pageData:", json["data"][0]["attributes"]["blocks"]);
+    if (!json["data"].length) {
+      return redirectToHomepage();
+    }
+    console.log("pageData:", json["data"][0]["attributes"]["blocks"]);
 
     const pageData = await getDataDependencies(json["data"][0]["attributes"]);
     return {
