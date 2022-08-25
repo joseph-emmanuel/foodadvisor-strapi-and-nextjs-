@@ -36,3 +36,13 @@ export function getData(slug, locale) {
     slug: slugToReturn,
   };
 }
+// This function is create dataurl for the paths of the pages
+export function getDataUrl() {
+  // const slugToReturn = `/${slug}?lang=${locale}`;
+  const apiUrl = `/pages?populate=deep`;
+
+  return {
+    data: getStrapiURL(apiUrl),
+    // slug: slugToReturn,
+  };
+}
